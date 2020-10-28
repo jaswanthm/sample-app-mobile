@@ -201,6 +201,7 @@ export default class InventoryList extends Component {
 					) }
 				</View>
 				<FlatList
+					id={ "flatlist" }
 					data={ this.state.inventoryList }
 					keyExtractor={ this.keyExtractor }
 					key={ (this.state.gridView) ? 1 : 0 }
